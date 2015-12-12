@@ -1,0 +1,18 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+
+development:
+  <<: *default
+  database: automation-api_development
+
+test:
+  <<: *default
+  database: automation-api_test
+
+production:
+  <<: *default
+  database: automation-api_production
+  username: automation-api
+  password: <%= ENV['AUTOMATION-API_DATABASE_PASSWORD'] %>
