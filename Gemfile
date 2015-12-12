@@ -4,6 +4,7 @@ gem 'rails', '4.2.5'
 
 gem 'pg', '~> 0.15'
 gem 'puma'
+gem 'uglifier'
 
 gem 'jbuilder', '~> 2.0'
 gem 'mqtt'
